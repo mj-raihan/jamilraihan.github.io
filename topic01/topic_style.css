@@ -1,0 +1,54 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+section {
+    margin-top: 20px;
+}
+.img_content {
+    width: 70%; /* Set the width to 50% of the parent container */
+    height: auto; /* Automatically adjust the height to maintain the aspect ratio */
+}
+
+#vid-container {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+}
+iframe {
+    width: 100%;
+    max-width: 100%; /* Limit the width to 100% of the container */
+    height: 420px;
+}
+
+@media screen and (max-width: 768px) {
+    #video-container {
+        max-width: 480px;
+    }
+}
+/* Style anchor tags for link color change on hover */
+a {
+    color: rgb(99, 99, 249); /* Default link color */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth color transition */
+}
+a:hover {
+    color: red; /* Red color on hover */
+}

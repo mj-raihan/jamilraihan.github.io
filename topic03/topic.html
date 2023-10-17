@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>By Md. Johir Raihan</title>
+    <link rel="stylesheet" type="text/css" href="topic_style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Automated Hand Exercise Machine with Monitoring System for Paralysis Patients.</h2>
+    </header>
+
+    <main>
+        <p style="font-size: 16px;line-height: 1.5;">
+            <b><a href="../index.html">Md. Johir Raihan</a> </b>|
+            <b>25 Sept 2023</b> |
+            <b>&copy; 2023 Md. Johir Raihan</b>
+            <br>
+        </p>
+
+        <div style="text-align: center;">
+            <img class="img_content" src="pic01.jpg">
+        </div>
+
+
+        <p style="font-size: 18px;line-height: 1.5;">
+            <b>Title:</b> Automated Hand Exercise Machine with Monitoring System for Paralysis Patients.<br>
+            <b>Creators:</b> Md. J. Raihan, Md. Irfan Hussain Sikder, Swaraj Mondal<br>
+            <!-- <b>Achivement:</b> <span style="color: red;">1st position (Champion) Award</span> <br> -->
+            <!-- <b>Materials:</b> <a href="https://ieeexplore.ieee.org/document/9564240">Paper Link </a> | Google Drive <br> -->
+            <br>
+        </p>
+
+        <h2>Abstract</h2>
+        <p style="font-size: 18px; text-align: justify; line-height: 1.5;"> Here, we have described the
+            details of the project. We have divided the whole project
+            into three main parts, those are hardware, circuit diagram and software parts. In the hardware parts
+            we have setup the motor with the human body. To do that we have designed a motor shaft to attach
+            a lather from the wrist to that motor shaft. Next to keep the motor attach into a block box we have
+            designed a motor mount that attaches the motor to the box. Also, to keep the box attach to the
+            human shoulder we designed an outfit using lather that attaches the box to the shoulder as shown
+            in the Figure. We have used a rubber finger gripper to keep the heart rate sensor attach to the
+            fingertip. In the circuit part, we have designed a circuit diagram to read the value from the heart
+            rate sensor and to control the motor. An Arduino has been used as the microcontroller to connect
+            all the electrical component. The motor driver has been used to control the motor direction and
+            speed. A Bluetooth device has been connected to the microcontroller to read and send data from
+            and to the computer. In the software part, we send the heart rate sensor data to the computer via
+            Bluetooth and receive the motor control input from the computer. To make the hand exercise
+            automatic we had to detect weather the hand is in down position or in up position. To achieve that
+            we have implemented a pose detection algorithm using the MediaPipe library from google. The
+            pose detection algorithm gives us the human body joint land mark data using which we have
+            extracted the shoulder, elbow and wrist land mark value. Further we have used these values to
+            calculate angle between the biceps and forearm and using the angle we determine whether the hand
+            is in down position or up position. If the hand is in down position a command is send to the
+            microcontroller to use the motor so that the motor pick ups the hand. As the hand is in up position
+            another command is seed to the microcontroller to cut the power to the motor. At this point the
+            patient can apply force to bring the hand down to lower position. This process continues and the
+            patient gets an automatic hand exercise. Further we have built interface to count the number hand
+            exercise and show them in real-time in a window along with the patient’s heart rate data. This
+            shows the health condition of the patient as he continuous to do the exercise.</p>
+
+        <h2>Presentation Video</h2>
+        <div class="vid_content">
+            <iframe width="1168" height="657" src="https://www.youtube.com/embed/tgaQillNLy8"
+                title="Automated Hand Exercise Machine with Monitoring System for Paralysis Patient" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Md. Johir Raihan</p>
+    </footer>
+</body>
+
+</html>

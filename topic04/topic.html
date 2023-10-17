@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>By Md. Johir Raihan</title>
+    <link rel="stylesheet" type="text/css" href="topic_style.css">
+</head>
+
+<body>
+    <header>
+        <h2>Gesture-Driven Robotic Arm: Utilizing Computer Vision for Enhanced Human-Machine Interaction.</h2>
+    </header>
+
+    <main>
+        <p style="font-size: 16px;line-height: 1.5;">
+            <b><a href="../index.html">Md. Johir Raihan</a> </b>|
+            <b>25 Sept 2023</b> |
+            <b>&copy; 2023 Md. Johir Raihan</b>
+            <br>
+        </p>
+
+        <div style="text-align: center;">
+            <img class="img_content" src="pic01.jpg">
+        </div>
+
+
+        <p style="font-size: 18px;line-height: 1.5;">
+            <b>Title:</b> Gesture-Driven Robotic Arm: Utilizing Computer Vision for Enhanced Human-Machine
+            Interaction.<br>
+            <b>Creator:</b> Md. J. Raihan<br>
+            <!-- <b>Achivement:</b> <span style="color: red;">1st position (Champion) Award</span> <br> -->
+            <!-- <b>Materials:</b> <a href="https://ieeexplore.ieee.org/document/9564240">Paper Link </a> | Google Drive <br> -->
+            <br>
+        </p>
+
+        <h2>Abstract</h2>
+        <p style="font-size: 18px; text-align: justify; line-height: 1.5;"> This project presents a computer
+            vision-controlled robot arm system. It consists of a computer that continuously captures real-time camera
+            input and employs a MediaPipe Machine Learning model to recognize hand gestures. The recognized gestures are
+            then transmitted to an ESP-32 microcontroller via the WebSocket communication protocol. The robot arm is
+            equipped with three stepper motors, responsible for controlling the base, Arm 1, and Arm 2. A 12V, 5A power
+            supply is used to provide the necessary power to the stepper motors, while a buck converter steps down the
+            voltage to 3.3V for the ESP-32. <br>
+
+            Hand gestures play a crucial role in controlling the robot arm. A rectangular box, adaptable to any location
+            within the camera's view, activates the control mechanism when a single hand is displayed. Specific gestures
+            control individual robot arm components, with fist or open palm gestures used for vertical arm control and
+            left/right placement determining base rotation. The system supports simultaneous control of multiple
+            components, enhancing its efficiency and versatility. <br>
+
+            The robot arm's physical design is crafted using PVC board, nuts, bolts, and glue, with the base featuring a
+            360-degree rotation capability. The stepper motors and robot arm are connected via couplers. Both the
+            microcontroller (ESP-32) and the computer require custom coding: C++ is used for the ESP-32, utilizing the
+            Accelstepper library for motor control, and network libraries to enable WebSocket communication. An HTML
+            webpage is created to facilitate remote robot arm control. <br>
+
+            The computer vision aspect of the project employs Python to process camera input. A Mediapipe human pose
+            prediction model identifies the hand's joint coordinates relative to the screen. A rectangular box
+            activation control ensures that gestures are recognized only when the hand is outside the box. A four-finger
+            gesture is used to disable the control. This user-friendly gesture control mechanism makes the robot arm
+            versatile and accessible for various applications.</p>
+
+        <h2>Presentation Video</h2>
+        <div class="vid_content">
+            <iframe width="1168" height="657" src="https://www.youtube.com/embed/x-ixVZ53XgI"
+                title="Gesture-Driven Robotic Arm: Utilizing Computer Vision for Enhanced Human-Machine Interaction."
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Md. Johir Raihan</p>
+    </footer>
+</body>
+
+</html>
