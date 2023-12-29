@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Johir Raihan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Using local bootstrap -->
+    <link rel="stylesheet" href="../assets/BS_4.6/bootstrap.min.css" />
+
+    <!-- our stylesheet -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        .event_img {
+            text-align: center;
+        }
+        .event_img img{
+            width: 70%;
+        }
+        .video_src {
+            width: 80%;
+            margin-top: 3%;
+        }
+        .video_src iframe {
+            padding-left: 15%;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <!-- Side-Bar Navigation Links -->
+    <!-- navbar for small-screen -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="" id="navbarNav">
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item hovr">
+                <a href="../index.html" class="nav-link text-light">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item hovr">
+                <a href="../publications/publications.html" class="nav-link text-light">
+                    Publications
+                </a>
+            </li>
+            <li class="nav-item hovr">
+                <a href="#" class="nav-link text-light">
+                    News
+                </a>
+            </li>
+            <li class="nav-item hovr">
+                <a href="../projects/projects.html" class="nav-link text-light">
+                    Projects
+                </a>
+            </li>
+            <li class="nav-item hovr">
+                <a href="https://drive.google.com/uc?export=download&id=1kiOc4WmDc_6sG5QMx_maJhaBM2_B7m-r" class="nav-link text-light">
+                    CV
+                </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- side-bar -->
+    <div class="container-fluid d-flex flex-row p-4" id = "main_container">
+        <div class="d-flex flex-column p-3" id = "sidebar_menue">
+            <div class="position-fixed" style="width: 20%;">
+                <ul class=" p-3 mt-3 nav nav-pills flex-column mb-auto ">
+                    <!-- Note: first li element (active link) needs 4-side border. Other links have no "top border" -->
+                    <li class="nav-item py-2 hovr border">
+                        <a href="../index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item py-2 hovr border border-top-0">
+                        <a href="../publications/publications.html" class="nav-link text-muted">
+                            Publications
+                        </a>
+                    </li>
+                    <li class="nav-item py-2 hovr border border-top-0">
+                        <a href="#" class="nav-link text-muted">
+                            News & Events
+                        </a>
+                    </li>
+                    <li class="nav-item py-2 hovr border border-top-0">
+                        <a href="../projects/projects.html" class="nav-link text-muted">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav-item py-2 hovr border border-top-0">
+                        <a href="https://drive.google.com/uc?export=download&id=1kiOc4WmDc_6sG5QMx_maJhaBM2_B7m-r" class="nav-link text-muted">
+                            Download CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        <div class="container" id = "contents_id">
+
+            <!-- Main Heading -->
+            <h1 class="display-3 p-4"> News & Events </h1>
+
+            <!-- ================    Content Sections    ================ -->
+
+            <!-- Event 1 -->
+            <section class="content_section lead py-5">
+                <h3 class="p-3 text-muted alert-success">Best Paper Award at ICIEV & icIVPR conferences.</h3>
+                <div class="card mx-auto border-0" >
+                    <div class="card-body">
+                        <h5 class="card-title text-muted">Title: <a href="https://ieeexplore.ieee.org/document/9564240" class="text-primary">Automated Rehabilitation Exercise Assessment by Genetic Algorithm-optimized CNN</a></h5>
+                        <h5 class="card-subtitle mb-2 text-muted">Authors: Md. J. Raihan, M. A. R. Ahad, and A.-A. Nahid</h5>
+                        <div class="event_img py-5">
+                            <img src="./event_1_1.jpg"  alt="Event Image">
+                        </div>
+                        
+                        <h5 class="card-subtitle mt-5 mb-3 text-muted">Abstract</h6>
+                        <p class="card-text">Every year, the number of motor dysfunction patients has been rising. These patients require physical therapy and continuous observation and assessment of their exercises by a professional therapist. This process can take a longer time, leading to a staff shortage and increasing financial costs. Thus, a reliable rehabilitation framework is necessary to assess these exercises as precisely as possible. In this paper, we have proposed an exercise assessment framework using the 1D Local Binary Pattern (LBP) to extract valuable features from skeleton data and a genetic algorithm (GA) optimized Convolutional Neural Network (CNN) to predict the score. The KIMORE dataset has been used in this study. We have achieved 0.0165 Mean Absolute Deviation (MAD) on the training set and 0.13515 on the validation set.</p>
+
+                        <h5 class="card-subtitle mt-5 mb-3 text-muted">My Contribution</h6>
+                        <p class="card-text">I developed a robust rehabilitation framework to assess motor dysfunction patients' exercises with high precision, addressing the challenge of time-consuming and labor-intensive evaluations. This framework utilizes a novel combination of 1D Local Binary Pattern (LBP) for feature extraction from skeleton data and a Convolutional Neural Network (CNN) optimized by Genetic Algorithm (GA) to predict exercise scores.</p>
+                        
+                        <h5 class="card-subtitle mt-5 mb-3 text-muted">Abstract</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+                        <h5 class="card-subtitle mt-5 mb-3 text-muted text-primary">Presentation Video</h6>
+                        <div class="embed-responsive embed-responsive-16by9 video_src">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/JL35XAsR4Rk" title="Automated Rehabilitation Exercise Assessment by Genetic Algorithm-optimized CNN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+
+                        <h5 class="card-subtitle mt-5 mb-3 text-muted text-primary">Closing Ceremony Video</h6>
+                        <div class="embed-responsive embed-responsive-16by9 video_src">
+                            <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/BIbmfmhscCg" title="ICIEV-IVPR Keynote: Social Augmented Reality Interactions, Anton Nijholt, U Twente &amp; AWARD ceremony" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Event 2 -->
+            <section class="content_section lead py-5">
+                <h3 class="p-3 text-muted alert-success">App idea champion at MOBILE APP GAME & JOB FESTIVAL 2023, ICT, Bangladesh.</h3>
+                <div class="card mx-auto border-0" >
+                    <div class="card-body">
+                        <h5 class="card-title text-muted">Title: <span class="text-primary">Autistic Kids Companion: An Automatic Exercise Assessment and Companion for Autistic Kids and Motor Dysfunction Patients Using ML</span></h5>
+                        <h5 class="card-subtitle mb-2 text-muted">Authors: Md. J. Raihan</h5>
+                        <div class="event_img py-5">
+                            <img src="./event_2_1.jpg"  alt="Event Image">
+                        </div>
+                        
+                        <h5 class="card-subtitle mt-5 mb-3 text-muted">Abstract</h6>
+                        <p class="card-text">Many people with Autism Spectrum Disorder (ASD) have trouble with their ability to coordinate their movements and process their senses. They may also display repetitive or stereotyped motions. However, regular physical activity and exercise can have many advantages for people with ASD, such as better physical health, and decreased anxiety. I have proposed an app idea that will act as their companion and make their exercise more enjoyable. The app titled “Autistic Kids Companion” uses a Mediapipe-based pose landmark algorithm to extract landmarks which are given to a Machine Learning (ML) model to predict the score of the performed exercise and analyze their body movement. The app will also provide which body part they should focus more on to accurately do the exercise. I have also provided an idea to use animated characters in place of their body so that it is more entertaining for them. Also, I have added a page that will contain many training exercises to guide their parents. The app will also collect statistical data about their child's exercise progress and will show a progress chart. Further, I have implemented the idea of uploading their performed exercise to an online server, that will automatically train a model on the new dataset and distribute the new model to the mobile app. In short, the application will enable families with ASD children to live a better and healthier life.</p>
+
+                        <h5 class="card-subtitle mt-5 mb-3 text-muted text-primary">Presentation Video</h6>
+                        <div class="embed-responsive embed-responsive-16by9 video_src">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hNnHTisxkPQ" title="Mobile App, Game and Job Festival 2023 at Khulna University." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+
+                        <h5 class="card-subtitle mt-5 mb-3 text-muted text-primary">Awards Ceremony</h6>
+                        <div class="embed-responsive embed-responsive-16by9 video_src">
+                            <iframe class="embed-responsive-item"  src="https://www.youtube.com/embed/MshVl_PDF6s" title="Mobile App, Game and Job Festival 2023 at Khulna University. &amp; AWARD ceremony" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </section> 
+            
+
+            <!-- Event 3 -->
+
+
+
+
+
+
+            <footer>
+                <p>&copy; 2023 Md. Johir Raihan</p>
+            </footer>            
+        </div>
+    </div>
+
+    
+
+    
+    
+    <!-- Bootstrap local files -->
+    <!-- JavaScript files incusion in order -->
+    <script src="../assets/BS_4.6/jquery-3.5.1.min.js"></script>
+    <script src="../assets/BS_4.6/popper.min.js"></script>
+    <script src="../assets/BS_4.6/bootstrap.min.js"></script>
+
+    <!-- following uses CDNS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>

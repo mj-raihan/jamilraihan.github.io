@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Johir Raihan</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Using local bootstrap -->
+    <link rel="stylesheet" href="../assets/BS_4.6/bootstrap.min.css" />
+
+    <!-- our stylesheet -->
+    <link rel="stylesheet" href="../styles.css">
+
+    <style>
+        .event_img {
+            text-align: center;
+        }
+        .event_img img{
+            width: 70%;
+        }
+        .video_src {
+            width: 80%;
+            margin-top: 3%;
+        }
+        .video_src iframe {
+            padding-left: 15%;
+        }
+    </style>
+
+</head>
+
+
+
+<body>
+
+    <!-- Side-Bar Navigation Links -->
+    <!-- navbar for small-screen -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+        <div class="" id="navbarNav">
+          <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item hovr">
+                <a href="../index.html" class="nav-link text-light">
+                    Home
+                </a>
+            </li>
+            <li class="nav-item hovr">
+                <a href="../publications/publications.html" class="nav-link text-light">
+                    Publications
+                </a>
+            </li>
+            <li class="nav-item hovr">
+                <a href="../news_events/news_events.html" class="nav-link text-light">
+                    News
+                </a>
+            </li>
+            <li class="nav-item hovr">
+                <a href="#" class="nav-link text-light">
+                    Projects
+                </a>
+            </li>
+            <li class="nav-item hovr">
+                <a href="https://drive.google.com/uc?export=download&id=1kiOc4WmDc_6sG5QMx_maJhaBM2_B7m-r" class="nav-link text-light">
+                    CV
+                </a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <!-- side-bar -->
+    <div class="container-fluid d-flex flex-row p-4" id = "main_container">
+        <div class="d-flex flex-column p-3" id = "sidebar_menue">
+            <div class="position-fixed" style="width: 20%;">
+                <ul class=" p-3 mt-3 nav nav-pills flex-column mb-auto ">
+                    <!-- Note: first li element (active link) needs 4-side border. Other links have no "top border" -->
+                    <li class="nav-item py-2 hovr border">
+                        <a href="../index.html" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item py-2 hovr border border-top-0">
+                        <a href="../publications/publications.html" class="nav-link text-muted">
+                            Publications
+                        </a>
+                    </li>
+                    <li class="nav-item py-2 hovr border border-top-0">
+                        <a href="../news_events/news_events.html" class="nav-link text-muted">
+                            News & Events
+                        </a>
+                    </li>
+                    <li class="nav-item py-2 hovr border border-top-0">
+                        <a href="#" class="nav-link text-muted">
+                            Projects
+                        </a>
+                    </li>
+                    <li class="nav-item py-2 hovr border border-top-0">
+                        <a href="https://drive.google.com/uc?export=download&id=1kiOc4WmDc_6sG5QMx_maJhaBM2_B7m-r" class="nav-link text-muted">
+                            Download CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+
+
+        <div class="container" id = "contents_id">
+
+            <!-- Main Heading -->
+            <h1 class="display-3 p-4"> Projects </h1>
+
+            <!-- ================    Content Sections    ================ -->
+
+            <!-- Project 1 -->
+            <section class="content_section lead py-5">
+                <h3 class="p-3 text-muted alert-primary">Gesture-Driven Robotic Arm.</h3>
+                <div class="card mx-auto border-0" >
+                    <div class="card-body">
+                        <h5 class="card-title text-muted">Title: <span class="text-primary">Gesture-Driven Robotic Arm: Utilizing Computer Vision for Enhanced Human-Machine Interaction.</span></h5>
+                        <h5 class="card-subtitle mb-2 text-muted">Creators: Md. J. Raihan</h5>
+                        <div class="event_img py-5">
+                            <img src="./pic01.jpg"  alt="Event Image">
+                        </div>
+                        
+                        <h5 class="card-subtitle mt-5 mb-3 text-muted">Abstract</h6>
+                        <p class="card-text">This project presents a computer vision-controlled robot arm system. It consists of a computer that continuously captures real-time camera input and employs a MediaPipe Machine Learning model to recognize hand gestures. The recognized gestures are then transmitted to an ESP-32 microcontroller via the WebSocket communication protocol. The robot arm is equipped with three stepper motors, responsible for controlling the base, Arm 1, and Arm 2. A 12V, 5A power supply is used to provide the necessary power to the stepper motors, while a buck converter steps down the voltage to 3.3V for the ESP-32.<br>
+                            <p></p>
+                            Hand gestures play a crucial role in controlling the robot arm. A rectangular box, adaptable to any location within the camera's view, activates the control mechanism when a single hand is displayed. Specific gestures control individual robot arm components, with fist or open palm gestures used for vertical arm control and left/right placement determining base rotation. The system supports simultaneous control of multiple components, enhancing its efficiency and versatility.<br>
+                            <p></p>
+                            The robot arm's physical design is crafted using PVC board, nuts, bolts, and glue, with the base featuring a 360-degree rotation capability. The stepper motors and robot arm are connected via couplers. Both the microcontroller (ESP-32) and the computer require custom coding: C++ is used for the ESP-32, utilizing the Accelstepper library for motor control, and network libraries to enable WebSocket communication. An HTML webpage is created to facilitate remote robot arm control.<br>
+                            <p></p>
+                            The computer vision aspect of the project employs Python to process camera input. A Mediapipe human pose prediction model identifies the hand's joint coordinates relative to the screen. A rectangular box activation control ensures that gestures are recognized only when the hand is outside the box. A four-finger gesture is used to disable the control. This user-friendly gesture control mechanism makes the robot arm versatile and accessible for various applications.</p>
+
+                        <h5 class="card-subtitle mt-5 mb-3 text-muted text-primary">Presentation Video</h6>
+                        <div class="embed-responsive embed-responsive-16by9 video_src">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/x-ixVZ53XgI" title="Gesture-Driven Robotic Arm: Utilizing Computer Vision for Enhanced Human-Machine Interaction." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Project 2 -->
+            <section class="content_section lead py-5">
+                <h3 class="p-3 text-muted alert-primary">Automated Hand Exercise Machine.</h3>
+                <div class="card mx-auto border-0" >
+                    <div class="card-body">
+                        <h5 class="card-title text-muted">Title: <span class="text-primary">Automated Hand Exercise Machine with Monitoring System for Paralysis Patients.</span></h5>
+                        <h5 class="card-subtitle mb-2 text-muted">Creators: Md. J. Raihan, Md. Irfan Hussain Sikder, Swaraj Mondal</h5>
+                        <div class="event_img py-5">
+                            <img src="./pic02.jpg"  alt="Event Image">
+                        </div>
+                        
+                        <h5 class="card-subtitle mt-5 mb-3 text-muted">Abstract</h6>
+                        <p class="card-text">We have divided the whole project into three main parts, those are hardware, circuit diagram and software parts. In the hardware parts we have setup the motor with the human body. To do that we have designed a motor shaft to attach a lather from the wrist to that motor shaft. Next to keep the motor attach into a block box we have designed a motor mount that attaches the motor to the box. Also, to keep the box attach to the human shoulder we designed an outfit using lather that attaches the box to the shoulder as shown in the Figure. We have used a rubber finger gripper to keep the heart rate sensor attach to the fingertip. In the circuit part, we have designed a circuit diagram to read the value from the heart rate sensor and to control the motor. An Arduino has been used as the microcontroller to connect all the electrical component. The motor driver has been used to control the motor direction and speed. A Bluetooth device has been connected to the microcontroller to read and send data from and to the computer. In the software part, we send the heart rate sensor data to the computer via Bluetooth and receive the motor control input from the computer. To make the hand exercise automatic we had to detect weather the hand is in down position or in up position. To achieve that we have implemented a pose detection algorithm using the MediaPipe library from google. The pose detection algorithm gives us the human body joint land mark data using which we have extracted the shoulder, elbow and wrist land mark value. Further we have used these values to calculate angle between the biceps and forearm and using the angle we determine whether the hand is in down position or up position. If the hand is in down position a command is send to the microcontroller to use the motor so that the motor pick ups the hand. As the hand is in up position another command is seed to the microcontroller to cut the power to the motor. At this point the patient can apply force to bring the hand down to lower position. This process continues and the patient gets an automatic hand exercise. Further we have built interface to count the number hand exercise and show them in real-time in a window along with the patient’s heart rate data. This shows the health condition of the patient as he continuous to do the exercise.</p>
+
+                        <h5 class="card-subtitle mt-5 mb-3 text-muted text-primary">Presentation Video</h6>
+                        <div class="embed-responsive embed-responsive-16by9 video_src">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgaQillNLy8" title="Automated Hand Exercise Machine with Monitoring System for Paralysis Patient" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+
+
+            <footer>
+                <p>&copy; 2023 Md. Johir Raihan</p>
+            </footer>
+        </div>
+    </div>
+
+
+    
+    
+    <!-- Bootstrap local files -->
+    <!-- JavaScript files incusion in order -->
+    <script src="../assets/BS_4.6/jquery-3.5.1.min.js"></script>
+    <script src="../assets/BS_4.6/popper.min.js"></script>
+    <script src="../assets/BS_4.6/bootstrap.min.js"></script>
+
+    <!-- following uses CDNS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
