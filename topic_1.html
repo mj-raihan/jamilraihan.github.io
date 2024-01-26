@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Md. Johir Raihan</title>
+    <link rel="icon" href="images/1.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link href="https://fonts.cdnfonts.com/css/writing-signature" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="topic_style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <nav id="sidebar" class="position-fixed">
+        <div class="sidebar-header">
+          <h3 style="font-family: 'Writing Signature', cursive;">Md. Johir Raihan</h3>
+        </div>
+    
+        <ul class="list-unstyled components" style="font-family: Perpetua, serif; font-size: 17pt;">
+          <li>
+            <a href="index.html" class="list-group-item" id="home-tab" onclick="showContent('home'); hideSidebar()"><i
+                class="fa-solid fa-house-user"></i></i>
+              Home</a>
+          </li>
+          <li>
+            <a href="publication.html" class="list-group-item" id="publication-tab"
+              onclick="showContent('publication'); hideSidebar()"><i class="fa-solid fa-briefcase"></i> Publications</a>
+          </li>
+          <li>
+            <a href="project.html" class="list-group-item" id="project-tab"
+              onclick="showContent('project'); hideSidebar()"><i class="fa-solid fa-book"></i> Projects</a>
+          </li>
+          <li>
+            <a href="achievements.html" class="list-group-item" id="achievements-tab"
+              onclick="showContent('achievements'); hideSidebar()"><i class="fa-regular fa-star"></i>Achievements</a>
+          </li>
+          <li>
+            <a href="https://drive.google.com/file/d/1nknOufa4i5EBhHDoEhVQZFoGmJ8rYBeE/view?usp=drive_link"
+              class="list-group-item" id="resume-tab" onclick="hideSidebar()"><i class="fa-regular fa-circle-down"></i>
+              Resume</a>
+          </li>
+        </ul>
+      </nav>
+
+
+    <div class="color-bar">
+        <p style="font-family: 'Writing Signature', cursive;">Md. Johir Raihan</p>
+    </div>
+
+    <!-- Page Content -->
+    <div id="content">
+
+        <!-- Hamburger Menu -->
+        <div id="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <!-- hamberger bar -->
+
+        </div>
+
+        <!-- Close Menu Button (Added) -->
+        <div id="menu-close" style="display: none;">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div id="toggleDarkMode" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+        </div>
+
+
+
+        <div><br>
+        </div>
+        <div class=" col-md-8 mx-auto" style="font-family: 'GFS Didot'">
+            <h3 class="card-title" style=" font-family: 'Lato', sans-serif; ">Automated Rehabilitation Exercise
+                Assessment by Genetic Algorithm-optimized CNN</h3>
+
+            <p style="font-size: 16px;line-height: 1.5;">
+                <b><a href="index.html">Md. Johir Raihan</a> </b>|
+                <b>25 Sept 2023</b> |
+                <b>&copy; 2023 Md. Johir Raihan</b>
+                <br>
+            </p>
+
+            <div style="text-align: center;">
+                <img class="img_content" src="topic_images/1.jpg">
+            </div>
+            <br>
+            <!-- <iframe src="https://docs.google.com/presentation/d/1pI5fALTu2_Zasv54f4o7_vdvpkDM1qWA/preview?hl=en" width="600" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe> -->
+            <p style="font-size: 18px;line-height: 1.5;">
+                <b>Title:</b> <a href="https://ieeexplore.ieee.org/document/9564240">Automated Rehabilitation Exercise
+                    Assessment by Genetic Algorithm-optimized CNN</a><br>
+                <b>Authors:</b> <strong>Md. Johir Raihan</strong>, M. A. R. Ahad, and A.-A. Nahid<br>
+                <b>Achivement:</b> <span style="color: red;">Best Paper Award (1st position)</span> <br>
+                <b>Materials:</b> <a href="https://ieeexplore.ieee.org/document/9564240">Paper Link </a> | Google Drive
+                <br>
+            </p>
+            <h2>Presentation Video</h2>
+            <div class="vid_content">
+                <iframe src="https://www.youtube.com/embed/JL35XAsR4Rk"
+                    title="Automated Rehabilitation Exercise Assessment by Genetic Algorithm-optimized CNN"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <br>
+
+            <h2>Abstract</h2>
+            <p style="font-size: 18px; text-align: justify; line-height: 1.5;"> Every year, the number of motor
+                dysfunction
+                patients has been rising. These patients require physical therapy
+                and continuous observation and assessment of their exercises by
+                a professional therapist. This process can take a longer time,
+                leading to a staff shortage and increasing financial costs. Thus,
+                a reliable rehabilitation framework is necessary to assess these
+                exercises as precisely as possible. In this paper, we have
+                proposed an exercise assessment framework using the 1D Local
+                Binary Pattern (LBP) to extract valuable features from skeleton
+                data and a genetic algorithm (GA) optimized Convolutional
+                Neural Network (CNN) to predict the score. The KIMORE
+                dataset has been used in this study. We have achieved 0.0165
+                Mean Absolute Deviation (MAD) on the training set and
+                0.13515 on the validation set.</p>
+
+            <h2>My Contribution</h2>
+            <p style="font-size: 18px; text-align: justify; line-height: 1.5;">I developed a robust rehabilitation
+                framework
+                to assess motor dysfunction patients' exercises with high
+                precision,
+                addressing the challenge of time-consuming and labor-intensive evaluations. This framework utilizes a
+                novel
+                combination of 1D Local Binary Pattern (LBP) for feature extraction from skeleton data and a
+                Convolutional
+                Neural Network (CNN) optimized by Genetic Algorithm (GA) to predict exercise scores.</p>
+
+            <h2>Closing Ceremony Video</h2>
+            <div class="vid_content">
+                <iframe width="1168" height="657" src="https://www.youtube.com/embed/BIbmfmhscCg"
+                    title="ICIEV-IVPR Keynote: Social Augmented Reality Interactions, Anton Nijholt, U Twente &amp; AWARD ceremony"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- conent end -->
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

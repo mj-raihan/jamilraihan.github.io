@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Md. Johir Raihan</title>
+  <link rel="icon" href="images/1.ico" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+  <link href="https://fonts.cdnfonts.com/css/writing-signature" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="topic_style.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <nav id="sidebar" class="position-fixed">
+    <div class="sidebar-header">
+      <h3 style="font-family: 'Writing Signature', cursive;">Md. Johir Raihan</h3>
+    </div>
+
+    <ul class="list-unstyled components" style="font-family: Perpetua, serif; font-size: 17pt;">
+      <li>
+        <a href="index.html" class="list-group-item" id="home-tab" onclick="showContent('home'); hideSidebar()"><i
+            class="fa-solid fa-house-user"></i></i>
+          Home</a>
+      </li>
+      <li>
+        <a href="publication.html" class="list-group-item" id="publication-tab"
+          onclick="showContent('publication'); hideSidebar()"><i class="fa-solid fa-briefcase"></i> Publications</a>
+      </li>
+      <li>
+        <a href="project.html" class="list-group-item" id="project-tab"
+          onclick="showContent('project'); hideSidebar()"><i class="fa-solid fa-book"></i> Projects</a>
+      </li>
+      <li>
+        <a href="achievements.html" class="list-group-item" id="achievements-tab"
+          onclick="showContent('achievements'); hideSidebar()"><i class="fa-regular fa-star"></i>Achievements</a>
+      </li>
+      <li>
+        <a href="https://drive.google.com/file/d/1nknOufa4i5EBhHDoEhVQZFoGmJ8rYBeE/view?usp=drive_link"
+          class="list-group-item" id="resume-tab" onclick="hideSidebar()"><i class="fa-regular fa-circle-down"></i>
+          Resume</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="color-bar">
+    <p style="font-family: 'Writing Signature', cursive;">Md. Johir Raihan</p>
+  </div>
+
+  <!-- Page Content -->
+  <div id="content">
+
+    <!-- Hamburger Menu -->
+    <div id="menu-toggle">
+      <i class="fas fa-bars"></i>
+      <!-- hamberger bar -->
+
+    </div>
+
+    <!-- Close Menu Button (Added) -->
+    <div id="menu-close" style="display: none;">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <div id="toggleDarkMode" aria-label="Toggle Dark Mode">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <div><br>
+    </div>
+
+    <!-- project start -->
+    <div id="project" class="container mt-3" style="display: none;">
+      <h1 style="font-family: Perpetua, serif;">Projects</h1>
+
+      <!--card another -->
+      <div class="card pub_card" id="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <!-- Image column -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="topic_images/5.gif" class="img-fluid rounded"
+                style="width: 100%; max-height: 400px; object-fit:contain; ">
+            </div>
+
+            <!-- Text and buttons column -->
+            <div class="col-md-8 ">
+              <p class="card-title publication_title">Gesture-Driven Robotic Arm: Utilizing Computer Vision for Enhanced
+                Human-Machine Interaction.</p>
+              <p class="card-text" style="margin-bottom: 0px; font-family: 'GFS Didot'">
+              <p class="author_name"> <strong>Md. Johir Raihan</strong></p>
+              <p class="author_name">Samiya Intesar</p>
+              <p class="author_name">Jannatul Jeba</p>
+              <p class="author_name">MD Jakaria</p>
+              <div></div>
+              <p class="journal_name"> <span class="journal_name_span"><strong>Project</strong></span>
+                <span class="journal_name_span">2023</span>
+              </p>
+
+              </p>
+              <p class="card-text default_card_text">
+                This project features a computer vision-controlled robot arm, utilizing real-time gesture recognition
+                via a MediaPipe model. Stepper motors drive the robot's base, Arm 1, and Arm 2, controlled by an ESP-32
+                microcontroller through WebSocket communication. The physical design incorporates PVC and offers
+                360-degree base rotation. Custom coding in C++ and Python enables user-friendly control, making the
+                robot versatile for diverse applications.
+              </p>
+
+              <div class="card-links">
+                <a href="topic_3.html" class="btn btn-outline-primary card_button">
+                  <i class="fa-brands fa-readme fa-bounce fa-la"></i>
+                  Read More</a>
+                <a href="https://youtu.be/x-ixVZ53XgI" class="btn btn-outline-primary card_button">
+                  <i class="fa-solid fa-tv"></i>
+                  Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!--card another -->
+      <div class="card pub_card" id="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <!-- Image column -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="topic_images/4.gif" class="img-fluid rounded"
+                style="width: 100%; max-height: 400px; object-fit:contain; ">
+            </div>
+
+            <!-- Text and buttons column -->
+            <div class="col-md-8 ">
+              <p class="card-title publication_title">Automated Hand Exercise Machine with Monitoring System for
+                Paralysis Patients.</p>
+              <p class="card-text" style="margin-bottom: 0px; font-family: 'GFS Didot'">
+              <p class="author_name"> <strong>Md. Johir Raihan</strong></p>
+              <p class="author_name">Md. Irfan Hussain Sikder</p>
+              <p class="author_name">Swaraj Mondal</p>
+              <div></div>
+              <p class="journal_name"> <span class="journal_name_span"><strong>Project</strong></span>
+                <span class="journal_name_span">2022</span>
+              </p>
+
+              </p>
+              <p class="card-text default_card_text">
+                The project aims to facilitate automated hand exercises for rehabilitation by integrating a motor-driven
+                mechanism controlled through a combination of hardware, circuitry, and software. Motivated by the goal
+                of aiding patients in therapeutic hand movements, the system utilizes a heart rate sensor and a pose
+                detection algorithm to ensure synchronized and safe exercise sessions. The real-time monitoring of
+                exercise count and heart rate provides valuable insights into the patient's health condition during the
+                rehabilitation process.
+              </p>
+
+              <div class="card-links">
+                <a href="topic_2.html" class="btn btn-outline-primary card_button"
+                  onclick="showContent('topic_1'); hideSidebar()">
+                  <i class="fa-brands fa-readme fa-bounce fa-la"></i>
+                  Read More</a>
+                <a href="https://youtu.be/tgaQillNLy8" class="btn btn-outline-primary card_button">
+                  <i class="fa-solid fa-tv"></i>
+                  Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+
+
+    </div>
+    <!-- project end -->
+
+  </div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+  <script>
+    function showContent(contentId) {
+      if (String(contentId) === "project") {
+        // $(".container").hide();
+        $("#" + contentId).fadeIn();
+        // $("#sidebar a").removeClass("active"); // Remove active class from all tabs
+        $("#" + contentId + "-tab").addClass("active"); // Add active class to the selected tab
+      }
+      hideSidebar(); // Hide the sidebar after clicking a component
+    }
+    $(document).ready(function () {
+      showContent("project");
+    });
+
+  </script>
+</body>
+
+</html>

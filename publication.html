@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Md. Johir Raihan</title>
+  <link rel="icon" href="images/1.ico" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+  <link href="https://fonts.cdnfonts.com/css/writing-signature" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="topic_style.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+  <!-- Custom CSS -->
+
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <nav id="sidebar" class="position-fixed">
+    <div class="sidebar-header">
+      <h3 style="font-family: 'Writing Signature', cursive;">Md. Johir Raihan</h3>
+    </div>
+
+    <ul class="list-unstyled components" style="font-family: Perpetua, serif; font-size: 17pt;">
+      <li>
+        <a href="index.html" class="list-group-item" id="home-tab" onclick="showContent('home'); hideSidebar()"><i
+            class="fa-solid fa-house-user"></i></i>
+          Home</a>
+      </li>
+      <li>
+        <a href="publication.html" class="list-group-item" id="publication-tab"
+          onclick="showContent('publication'); hideSidebar()"><i class="fa-solid fa-briefcase"></i> Publications</a>
+      </li>
+      <li>
+        <a href="project.html" class="list-group-item" id="project-tab"
+          onclick="showContent('project'); hideSidebar()"><i class="fa-solid fa-book"></i> Projects</a>
+      </li>
+      <li>
+        <a href="achievements.html" class="list-group-item" id="achievements-tab"
+          onclick="showContent('achievements'); hideSidebar()"><i class="fa-regular fa-star"></i>Achievements</a>
+      </li>
+      <li>
+        <a href="https://drive.google.com/file/d/1nknOufa4i5EBhHDoEhVQZFoGmJ8rYBeE/view?usp=drive_link"
+          class="list-group-item" id="resume-tab" onclick="hideSidebar()"><i class="fa-regular fa-circle-down"></i>
+          Resume</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="color-bar">
+    <p style="font-family: 'Writing Signature', cursive;">Md. Johir Raihan</p>
+  </div>
+
+  <!-- Page Content -->
+  <div id="content">
+
+    <!-- Hamburger Menu -->
+    <div id="menu-toggle">
+      <i class="fas fa-bars"></i>
+      <!-- hamberger bar -->
+    </div>
+
+    <!-- Close Menu Button (Added) -->
+    <div id="menu-close" style="display: none;">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <div id="toggleDarkMode" aria-label="Toggle Dark Mode">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <div><br>
+    </div>
+
+    <!-- </div> -->
+
+    <!-- Publication Content -->
+    <div id="publication" class="container mt-3" style="display: none;">
+      <h1 style="font-family: Perpetua, serif;">Publications</h1>
+
+      <!--card another -->
+      <div class="card pub_card" id="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <!-- Image column -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="images/11.jpg" class="img-fluid rounded"
+                style="width: 100%; max-height: 400px; object-fit:contain; ">
+            </div>
+
+            <!-- Text and buttons column -->
+            <div class="col-md-8 ">
+              <p class="card-title publication_title">Detection of The Chronic Kidney Disease Using XGBoost Classifier
+                And Explaining The Influence of The Attributes on The Model Using SHAP</p>
+              <p class="card-text" style="margin-bottom: 0px; font-family: 'GFS Didot'">
+              <p class="author_name"> <strong>Md. Johir Raihan</strong></p>
+              <p class="author_name">Md. Al-Masrur Khan</p>
+              <p class="author_name">Seong-Hoon Kee</p>
+              <p class="author_name">Abdullah-Al Nahid</p>
+              <div></div>
+              <p class="journal_name"> <span class="journal_name_span"><strong>Journal</strong></span> <span
+                  class="journal_name_span">Scientific Reports - Nature</span>
+                <span class="journal_name_span">2023</span>
+              </p>
+
+              </p>
+              <p class="card-text default_card_text">
+                In this paper, we have used the XGBoost as the ML classifier to predict whether a patient has CKD or
+                not. Using the XGBoost classifier, we have obtained an accuracy, precision, recall, and F1 score of
+                99.16%, 100%, 98.68%
+                and 99.33%,
+                respectively using all 24
+                features. The BBO algorithm selected almost half of the initial features. We have obtained
+                an accuracy, precision, recall, and F1 score of 98.33%, 100%, 97.36%
+                and 98.67%
+                respectively using only 13 features selected by the BBO algorithm. Finally, we have explained the impact
+                of the feature on the ML models using the SHapley Additive exPlanations (SHAP) analysis.
+              </p>
+
+              <div class="card-links">
+                <a href="https://www.nature.com/articles/s41598-023-33525-0.pdf"
+                  class="btn btn-outline-primary card_button" role="button"><i class="fa-regular fa-file-pdf"></i> Read
+                  PDF</a>
+                <a class="btn btn-outline-primary card_button" onclick="copyToClipboard(`@article{raihan2023detection,
+                  title={Detection of the chronic kidney disease using XGBoost classifier and explaining the influence of the attributes on the model using SHAP},
+                  author={Raihan, Md Johir and Khan, Md Al-Masrur and Kee, Seong-Hoon and Nahid, Abdullah-Al},
+                  journal={Scientific Reports},
+                  volume={13},
+                  number={1},
+                  pages={6263},
+                  year={2023},
+                  publisher={Nature Publishing Group UK London}
+                }`)"> <i class="fa-regular fa-copy"></i> BibTeX</a>
+                <a href="https://www.nature.com/articles/s41598-023-33525-0" class="btn btn-outline-primary card_button"
+                  role="button"><i class="fa-solid fa-link"></i></i>
+                  Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+      <!--card another -->
+      <div class="card pub_card" id="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <!-- Image column -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="images/10.jpg" class="img-fluid rounded"
+                style="width: 100%; max-height: 400px; object-fit:contain; ">
+            </div>
+
+            <!-- Text and buttons column -->
+            <div class="col-md-8 ">
+              <p class="card-title publication_title">Classification of Histopathological Colon Cancer Images Using
+                Particle Swarm Optimization-Based Feature Selection Algorithm</p>
+              <p class="card-text" style="margin-bottom: 0px; font-family: 'GFS Didot'">
+              <p class="author_name"> <strong>Md. Johir Raihan</strong></p>
+              <p class="author_name">Abdullah-Al Nahid</p>
+              <div></div>
+              <p class="journal_name"> <span class="journal_name_span"><strong>Book</strong></span> <span
+                  class="journal_name_span">Diagnostic Biomedical Signal and Image Processing Applications with Deep
+                  Learning Methods</span>
+                <span class="journal_name_span">2023</span>
+              </p>
+
+              </p>
+              <p class="card-text default_card_text">
+                Colon cancer (CC) is now one of the most prevalent cancers diagnosed in both men and women. Using the
+                particle swarm optimization (PSO) technique, we have categorized photos of CC in this chapter while
+                keeping the computing time relatively low. Through the employment of wavelet, CNN, and PSO, this chapter
+                helps shorten the calculation time for the reduction models. Using the SHapley Additive exPlanations
+                (SHAP) analysis, this chapter further explains the black box nature of machine learning models.Using the
+                gradient boosting classifier, we were able to achieve 99.73% accuracy, 99.86% precision, 99.6% recall,
+                and 99.73% F1 score on the CC dataset.
+              </p>
+
+              <a class="btn btn-outline-primary card_button" onclick="copyToClipboard(`@incollection{raihan2023classification,
+                  title={Classification of histopathological colon cancer images using particle swarm optimization-based feature selection algorithm},
+                  author={Raihan, Md Johir and Nahid, Abdullah-Al},
+                  booktitle={Diagnostic Biomedical Signal and Image Processing Applications with Deep Learning Methods},
+                  pages={61--82},
+                  year={2023},
+                  publisher={Elsevier}
+                }`)"> <i class="fa-regular fa-copy"></i> BibTeX</a>
+              <a href="https://www.sciencedirect.com/science/article/abs/pii/B9780323961295000123#preview-section-abstract"
+                class="btn btn-outline-primary card_button" role="button"><i class="fa-solid fa-link"></i></i>
+                Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--card another -->
+      <div class="card pub_card" id="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <!-- Image column -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="images/9.jpg" class="img-fluid rounded"
+                style="width: 100%; max-height: 400px; object-fit:contain; ">
+            </div>
+
+            <!-- Text and buttons column -->
+            <div class="col-md-8 ">
+              <p class="card-title publication_title">Breast Cancer Classification Along With Feature Prioritization
+                Using Machine Learning Algorithms</p>
+              <p class="card-text" style="margin-bottom: 0px; font-family: 'GFS Didot'">
+              <p class="author_name">Abdullah-Al Nahid</p>
+              <p class="author_name"> <strong>Md. Johir Raihan</strong></p>
+              <p class="author_name">Abdullah Al-Mamun Bulbul</p>
+
+              <div></div>
+              <p class="journal_name"> <span class="journal_name_span"><strong>Journal</strong></span> <span
+                  class="journal_name_span"> Health and Technology - Springer</span>
+                <span class="journal_name_span">2022</span>
+              </p>
+
+              </p>
+              <p class="card-text default_card_text">
+                We have used several Machine Learning (ML) models such as Gradient Boosting (GB), XGBoost (XGB),
+                CatBoost (CB), and Light Gradient Boosting Machine (LGBM) to classify the Breast Cancer (BC) and find
+                the feature importance. To interpret the ML model and find the feature contribution to the prediction of
+                the BC, we have used the Shapley Additive exPlanation (SHAP). Besides, a few filters and wrapper-based
+                feature selection and prioritization algorithms have been used to sort out the priority of the features.
+                gradient-based algorithms with 82.85% accuracy, 80.00% precision, 88.89% recall, and 84.21% F1-Score,
+                respectively.
+              </p>
+
+              <div class="card-links">
+                <a class="btn btn-outline-primary card_button" onclick="copyToClipboard(`@article{nahid2022breast,
+                  title={Breast cancer classification along with feature prioritization using machine learning algorithms},
+                  author={Nahid, Abdullah-Al and Raihan, Md Johir and Bulbul, Abdullah Al-Mamun},
+                  journal={Health and Technology},
+                  volume={12},
+                  number={6},
+                  pages={1061--1069},
+                  year={2022},
+                  publisher={Springer}
+                }`)"> <i class="fa-regular fa-copy"></i> BibTeX</a>
+                <a href="https://link.springer.com/article/10.1007/s12553-022-00710-6"
+                  class="btn btn-outline-primary card_button" role="button"><i class="fa-solid fa-link"></i></i>
+                  Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!--card another -->
+      <div class="card pub_card" id="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <!-- Image column -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="images/pic02.gif" class="img-fluid rounded"
+                style="width: 100%; max-height: 400px; object-fit:contain; ">
+            </div>
+
+            <!-- Text and buttons column -->
+            <div class="col-md-8 ">
+              <p class="card-title publication_title">Smart Human Following Baby
+                Stroller Using Computer Vision</p>
+              <p class="card-text" style="margin-bottom: 0px; font-family: 'GFS Didot'">
+              <p class="author_name"> <strong>Md. Johir Raihan</strong></p>
+              <p class="author_name">Md. Tariq Hasan</p>
+              <p class="author_name">Abdullah-Al Nahid</p>
+              <div></div>
+              <p class="journal_name"> <span class="journal_name_span"><strong>Conference</strong></span> <span
+                  class="journal_name_span">International Conference on STEM and the Fourth
+                  Industrial Revolution (ICSTEM4IR)</span>
+                <span class="journal_name_span">2022</span>
+              </p>
+
+              </p>
+              <p class="card-text default_card_text">
+                This paper proposes a human following baby carrier car that can follow a human without any kind of help
+                from the person. This reduces the labor work for a person and provides much freedom to carry out their
+                activities. Such a carrier can be operated by elderly people, disabled people, pregnant women, or by any
+                other without the need for much labor. The proposed system relies on the computer vision analysis that
+                uses the camera feed to detect the person to be followed and sends a command to a microcontroller that
+                operates the Carrier.
+              </p>
+
+              <div class="card-links">
+                <a href="https://scholar.archive.org/work/fsz5ytx5wjb7podjkcqkctn5k4/access/wayback/https://ku.ac.bd/journal/kustudies/article/download/482/782"
+                  class="btn btn-outline-primary card_button" role="button"><i class="fa-regular fa-file-pdf"></i> Read
+                  PDF</a>
+                <a class="btn btn-outline-primary card_button" onclick="copyToClipboard(`@article{raihansmart,
+                    title={SMART HUMAN FOLLOWING BABY STROLLER USING COMPUTER VISION},
+                    author={Raihan, Md Johir and Hasan, Md Tariq and Nahid, Abdullah-Al}
+                  }`)"> <i class="fa-regular fa-copy"></i> BibTeX</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!--card another -->
+      <div class="card pub_card" id="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <!-- Image column -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="images/4.jpg" class="img-fluid rounded"
+                style="width: 100%; max-height: 350px; object-fit:contain; ">
+            </div>
+
+            <!-- Text and buttons column -->
+            <div class="col-md-8 ">
+              <p class="card-title  publication_title">Histopathological breast cancer
+                image classification with feature prioritization using a heuristic algorithm</p>
+              <p class="card-text" style="margin-bottom: 0px; font-family: 'GFS Didot'">
+              <p class="author_name"> AA Nahid </p>
+              <p class="author_name"><strong>MJ Raihan</strong></p>
+              <p class="author_name">N Sikder</p>
+              <p class="author_name">SR Sabuj</p>
+              <div></div>
+              <p class="journal_name"> <span class="journal_name_span"><strong>Book</strong></span> <span
+                  class="journal_name_span">Artificial Intelligence in Cancer Diagnosis and Prognosis,
+                  Volume 2</span>
+                <span class="journal_name_span">2022</span>
+              </p>
+
+              </p>
+              <p class="card-text default_card_text">
+                In this work, we describe the extraction of global and local features from images using convolutional
+                neural networks and the use of histograms to classify breast cancer images. In addition, a heuristic
+                algorithm is used to extract a smaller number of effective features with which to classify breast cancer
+                images using an ensemble of random forest classifiers.
+              </p>
+
+              <div class="card-links">
+                <a href="https://iopscience.iop.org/book/edit/978-0-7503-3599-7.preview.pdf"
+                  class="btn btn-outline-primary card_button" role="button"><i class="fa-regular fa-file-pdf"></i>
+                  Preview
+                  PDF</a>
+                <a class="btn btn-outline-primary card_button" onclick="copyToClipboard(`@book{10.1088/978-0-7503-3599-7,
+                editor = {El-Baz, Ayman and Suri, Jasjit S},
+                title = {Artificial Intelligence in Cancer Diagnosis and Prognosis, Volume 2},
+                publisher = {IOP Publishing},
+                year = {2022},
+                series = {2053-2563},
+                isbn = {978-0-7503-3599-7},
+                abstract = {Within this second volume dealing with breast and bladder cancer, the editors and authors detail the latest research related to the application of artificial intelligence (AI) to cancer diagnosis and prognosis and summarize its advantages. It is the intention of the editors and authors to explore how AI assists in these activities, specifically with regard to its unprecedented accuracy, which is even higher than that of general statistical applications in oncology. Ways will also be demonstrated as to how these methods in AI are advancing the field. There have been thousands of papers written between 1995 and 2019 related to AI for cancer diagnosis and prognosis. However, to date (to the best of our knowledge) there has not yet been published a comprehensive overview of the latest findings pertaining to these AI technologies, with a single book project. Therefore, the purpose of this three-volume work, and particularly for this second volume dealing with breast and bladder cancer, is to present a compendium of these findings related to these two pervasive cancers. Many of the chapter authors are world class researchers in these technologies. Within this coverage it is our hope that scientists, researchers and clinicians can successfully incorporate these techniques into other significant cancers such as pancreatic, esophageal, leukemia, melanoma, etc. Part of IPEM–IOP Series in Physics and Engineering in Medicine and Biology. Volume 1 is available here. Volume 3 is available here.Key features• This work will contain a comprehensive overview of the latest techniques in artificial intelligence related to breast and bladder cancers.• All chapter authors and contributors will be world-class researchers in various aspects of AI and appropriate subsets such as machine learning, deep learning and neural networks.• The fusion of Big Data and AI will be incorporated where appropriate.• Multimodality imaging will be included within specific chapters.• Extensive references will be included at the end of each chapter to enhance further study.},
+                url = {https://dx.doi.org/10.1088/978-0-7503-3599-7},
+                doi = {10.1088/978-0-7503-3599-7}
+                }`)"> <i class="fa-regular fa-copy"></i> BibTeX</a>
+                <a href="https://store.ioppublishing.org/page/detail/Artificial-Intelligence-in-Cancer-Diagnosis-and-Prognosis-Volume-2//?k=9780750335973"
+                  class="btn btn-outline-primary card_button" role="button"><i class="fa-solid fa-link"></i></i>
+                  Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!--card another -->
+      <div class="card pub_card" id="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <!-- Image column -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="images/7.jpg" class="img-fluid rounded"
+                style="width: 100%; max-height: 400px; object-fit:contain; ">
+            </div>
+
+            <!-- Text and buttons column -->
+            <div class="col-md-8 ">
+              <p class="card-title publication_title">Malaria Cell Image Classification by Explainable Artificial
+                Intelligence</p>
+              <p class="card-text" style="margin-bottom: 0px; font-family: 'GFS Didot'">
+              <p class="author_name"> <strong>Md. Johir Raihan</strong></p>
+              <p class="author_name">Abdullah-Al Nahid</p>
+              <div></div>
+              <p class="journal_name"> <span class="journal_name_span"><strong>Journal</strong></span> <span
+                  class="journal_name_span">Health and Technology - Springer</span>
+                <span class="journal_name_span">2022</span>
+              </p>
+              </p>
+              <p class="card-text default_card_text">
+                In this paper, we have presented a malaria detection framework based on wavelet packet 2d, Convolutional
+                Neural Network. (CNN), and Whale Optimization Algorithm (WOA). We have extracted a global feature set
+                using the wavelet packet 2D and CNN. Further, we removed noisy features and selected an effective
+                feature
+                using WOA and XGBoost. The selected feature set is almost half of the initial feature set. Additionally,
+                we have used SHapley Additive exPlanations (SHAP) to interpret the trained model and assess the
+                significance of each feature. Based on the selected feature set, the XGBoost algorithm provides
+                accuracy,
+                precision, recall, and F1 score of 94. 78%, 94. 39%, 95. 21%, and 94. 80% respectively.
+              </p>
+
+              <div class="card-links">
+                <a class="btn btn-outline-primary card_button" onclick="copyToClipboard(`@article{raihan2022malaria,
+                title={Malaria cell image classification by explainable artificial intelligence},
+                author={Raihan, Md Johir and Nahid, Abdullah-Al},
+                journal={Health and Technology},
+                volume={12},
+                number={1},
+                pages={47--58},
+                year={2022},
+                publisher={Springer}
+              }`)"> <i class="fa-regular fa-copy"></i></i> BibTeX</a>
+                <a href="https://link.springer.com/article/10.1007/s12553-021-00620-z#Abs1"
+                  class="btn btn-outline-primary card_button" role="button"><i class="fa-solid fa-link"></i></i>
+                  Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!--card another -->
+      <div class="card pub_card" id="card1">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <!-- Image column -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="images/8.jpg" class="img-fluid rounded"
+                style="width: 100%; max-height: 400px; object-fit:contain; ">
+            </div>
+
+            <!-- Text and buttons column -->
+            <div class="col-md-8 ">
+              <p class="card-title publication_title"><i class="fa-solid fa-trophy fa-flip"
+                  style="color: #74fc8f;"></i>Automated Rehabilitation Exercise Assessment by Genetic
+                Algorithm-Optimized CNN</p>
+              <p class="card-text" style="margin-bottom: 0px; font-family: 'GFS Didot'">
+              <p class="author_name"> <strong>Md. Johir Raihan</strong></p>
+              <p class="author_name">Md Atiqur Rahman Ahad</p>
+              <p class="author_name">Abdullah-Al Nahid</p>
+              <div></div>
+              <p class="journal_name"> <span class="journal_name_span"><strong>Conference</strong></span> <span
+                  class="journal_name_span">Joint 10th International Conference on Informatics,
+                  Electronics & Vision (ICIEV) and 2021 5th International Conference on Imaging, Vision & Pattern
+                  Recognition (icIVPR)</span>
+                <span class="journal_name_span">2021</span>
+              </p>
+              </p>
+              <p class="card-text default_card_text">
+                Every year, the number of motor dysfunction patients has been rising. These patients require physical
+                therapy and continuous observation and assessment of their exercises by a professional therapist. In
+                this
+                paper, we have proposed an exercise assessment framework using the 1D Local Binary Pattern (LBP) to
+                extract valuable features from skeleton data and a genetic algorithm (GA) optimized Convolutional Neural
+                Network (CNN) to predict the score. The KIMORE dataset has been used in this study. We have achieved
+                0.0165 Mean Absolute Deviation (MAD) on the training set and 0.13515 on the validation set.
+              </p>
+
+              <div class="card-links">
+                <a class="btn btn-outline-primary card_button" onclick="copyToClipboard(`@inproceedings{raihan2021automated,
+                title={Automated rehabilitation exercise assessment by genetic algorithm-optimized CNN},
+                author={Raihan, Md Johir and Ahad, Md Atiqur Rahman and Nahid, Abdullah-Al},
+                booktitle={2021 Joint 10th International Conference on Informatics, Electronics \& Vision (ICIEV) and 2021 5th International Conference on Imaging, Vision \& Pattern Recognition (icIVPR)},
+                pages={1--6},
+                year={2021},
+                organization={IEEE}
+              }`)"> <i class="fa-regular fa-copy"></i></i> BibTeX</a>
+                <a href="https://ieeexplore.ieee.org/document/9564240" class="btn btn-outline-primary card_button"
+                  role="button"><i class="fa-solid fa-link"></i></i>
+                  Website</a>
+                <a href="topic_1.html" class="btn btn-outline-primary card_button"
+                  onclick="showContent('topic_1'); hideSidebar()">
+                  <i class="fa-brands fa-readme fa-bounce fa-la"></i>
+                  Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+    </div>
+    <!-- publication end -->
+
+  </div>
+  <!-- content end -->
+
+
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+  <!-- Custom JavaScript for Sidebar Toggle -->
+  <script>
+    function showContent(contentId) {
+      if (String(contentId) === "publication") {
+        // $(".container").hide();
+        $("#" + contentId).fadeIn();
+        // $("#sidebar a").removeClass("active"); // Remove active class from all tabs
+        $("#" + contentId + "-tab").addClass("active"); // Add active class to the selected tab
+      }
+      hideSidebar(); // Hide the sidebar after clicking a component
+    }
+    $(document).ready(function () {
+      showContent("publication");
+    });
+
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log("inside")
+      // Get the hash value from the URL
+      var hash = window.location.hash.substring(1);
+      console.log(hash);
+
+      // If the hash is not empty, scroll to the corresponding section
+      if (hash) {
+        var targetSection = document.getElementById(hash);
+        console.log(targetSection);
+        // targetSection.scrollIntoView();
+        // var yOffset = targetSection.getBoundingClientRect().top + window.pageYOffset;
+        // window.scrollTo({ top: yOffset, behavior: 'smooth' });
+        if (targetSection) {
+          console.log(targetSection);
+          targetSection.scrollIntoView();
+        }
+      }
+    });
+
+  </script>
+</body>
+
+</html>

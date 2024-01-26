@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Md. Johir Raihan</title>
+    <link rel="icon" href="images/1.ico" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link href="https://fonts.cdnfonts.com/css/writing-signature" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="topic_style.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <nav id="sidebar" class="position-fixed">
+        <div class="sidebar-header">
+            <h3 style="font-family: 'Writing Signature', cursive;">Md. Johir Raihan</h3>
+        </div>
+
+        <ul class="list-unstyled components" style="font-family: Perpetua, serif; font-size: 17pt;">
+            <li>
+                <a href="index.html" class="list-group-item" id="home-tab"
+                    onclick="showContent('home'); hideSidebar()"><i class="fa-solid fa-house-user"></i></i>
+                    Home</a>
+            </li>
+            <li>
+                <a href="publication.html" class="list-group-item" id="publication-tab"
+                    onclick="showContent('publication'); hideSidebar()"><i class="fa-solid fa-briefcase"></i>
+                    Publications</a>
+            </li>
+            <li>
+                <a href="project.html" class="list-group-item" id="project-tab"
+                    onclick="showContent('project'); hideSidebar()"><i class="fa-solid fa-book"></i> Projects</a>
+            </li>
+            <li>
+                <a href="achievements.html" class="list-group-item" id="achievements-tab"
+                    onclick="showContent('achievements'); hideSidebar()"><i
+                        class="fa-regular fa-star"></i>Achievements</a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1nknOufa4i5EBhHDoEhVQZFoGmJ8rYBeE/view?usp=drive_link"
+                  class="list-group-item" id="resume-tab" onclick="hideSidebar()"><i class="fa-regular fa-circle-down"></i>
+                  Resume</a>
+              </li>
+        </ul>
+    </nav>
+
+
+    <div class="color-bar">
+        <p style="font-family: 'Writing Signature', cursive;">Md. Johir Raihan</p>
+    </div>
+
+    <!-- Page Content -->
+    <div id="content">
+
+        <!-- Hamburger Menu -->
+        <div id="menu-toggle">
+            <i class="fas fa-bars"></i>
+            <!-- hamberger bar -->
+
+        </div>
+
+        <!-- Close Menu Button (Added) -->
+        <div id="menu-close" style="display: none;">
+            <i class="fas fa-times"></i>
+        </div>
+
+        <div id="toggleDarkMode" aria-label="Toggle Dark Mode">
+            <i class="fas fa-moon"></i>
+        </div>
+
+        <div><br>
+        </div>
+
+        <div class=" col-md-8 mx-auto" style="font-family: 'GFS Didot'">
+            <h3 class="card-title" style=" font-family: 'Lato', sans-serif; ">Storms End: AI enabled solution to
+                visualize and predict
+                Geomagnetic Storms from NASAs' "DISCOVR" spacecraft</h3>
+
+            <p style="font-size: 16px;line-height: 1.5;">
+                <b><a href="index.html">Md. Johir Raihan</a> </b>|
+                <b>25 Sept 2023</b> |
+                <b>&copy; 2023 Md. Johir Raihan</b>
+                <br>
+            </p>
+
+            <div style="text-align: center;">
+                <img class="img_content" src="topic_images/8.gif">
+            </div>
+
+            <br>
+
+
+            <p style="font-size: 18px;line-height: 1.5;">
+                <b>Title:</b> Storms End: AI enabled solution to
+                visualize and predict
+                Geomagnetic Storms from NASAs' "DISCOVR" spacecraft<br>
+                <b>Authors:</b> Mainul Islam Labib (Team Leader), <strong>Md. Johir Raihan</strong>, Wali Ullah, Sadia
+                Afrin, Md. Rashed Jaowad Khan<br>
+                <b>Achivement:</b> <span style="color: red;">Regional Championships (Khulna)</span> <br>
+                <!-- <b>Materials:</b> <a href="https://ieeexplore.ieee.org/document/9564240">Paper Link </a> | Google Drive <br> -->
+            </p>
+
+
+            <h2>Presentation Video</h2>
+            <div class="vid_content">
+                <iframe width="727" height="483" src="https://www.youtube.com/embed/ESYUsdPHaL4"
+                    title="Storms End: AI-enabled solution to visualize and predict Geomagnetic Storms" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+            <br>
+
+            <h2>Description</h2>
+            <p style="font-size: 18px; text-align: justify; line-height: 1.5;"> A geomagnetic storm is a major
+                disturbance of Earth's magnetosphere that occurs when there is a very efficient exchange of energy from
+                the solar wind into the space surrounding Earth. While the storms create a beautiful aurora, they also
+                can disrupt navigation systems such as the Global Navigation Satellite System (GNSS) and create harmful
+                geomagnetic induced currents (GICs) in the power grid and pipelines. NASA's "DSCOVR" spacecraft has long
+                been used to collect magnetometer readings from earths magnetic field which allowed scientists to make
+                predictions about geomagnetic storms. But, occasional faulty data which is a result of the environment
+                itself, is making the prediction task tougher. Hence, we; team "Storm Troopers"; are proposing "Storms
+                End"; an AI enabled solution to visualize and predict geomagnetic storm. Our solution includes a Neural
+                Network consisting of Spatial and Temporal modules to correctly capture the variability in magnetic
+                readings made from "DSCOVR". The model will be able to take previous readings as input and will output
+                the probability for a geomagnetic storm on a spatio-temporal scale. "Storms End" will also have
+                visualization features where users will be able to see geomagnetic patterns in a 3D environment and how
+                each area on earth is getting affected by geomagnetic storm. Similarly, it will also contain
+                visualization on what other measurements made from "DSCOVR" are changing in time and space. Through
+                "Storms End", we wish to build a solution that can accurately predict geomagnetic storms on a finer
+                scale and we hope that our visualization features will motivate others to create solutions in this
+                domain.</p>
+            <br>
+
+            <!-- conent end -->
+        </div>
+
+        <!-- Bootstrap JS and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="scripts.js"></script>
+</body>
+
+</html>

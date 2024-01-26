@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Md. Johir Raihan</title>
+  <link rel="icon" href="images/1.ico" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+  <link href="https://fonts.cdnfonts.com/css/writing-signature" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="topic_style.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+
+  <!-- Sidebar -->
+  <nav id="sidebar" class="position-fixed">
+    <div class="sidebar-header">
+      <h3 style="font-family: 'Writing Signature', cursive;">Md. Johir Raihan</h3>
+    </div>
+
+    <ul class="list-unstyled components" style="font-family: Perpetua, serif; font-size: 17pt;">
+      <li>
+        <a href="index.html" class="list-group-item" id="home-tab" onclick="showContent('home'); hideSidebar()"><i
+            class="fa-solid fa-house-user"></i></i>
+          Home</a>
+      </li>
+      <li>
+        <a href="publication.html" class="list-group-item" id="publication-tab"
+          onclick="showContent('publication'); hideSidebar()"><i class="fa-solid fa-briefcase"></i> Publications</a>
+      </li>
+      <li>
+        <a href="project.html" class="list-group-item" id="project-tab"
+          onclick="showContent('project'); hideSidebar()"><i class="fa-solid fa-book"></i> Projects</a>
+      </li>
+      <li>
+        <a href="achievements.html" class="list-group-item" id="achievements-tab"
+          onclick="showContent('achievements'); hideSidebar()"><i class="fa-regular fa-star"></i>Achievements</a>
+      </li>
+      <li>
+        <a href="https://drive.google.com/file/d/1nknOufa4i5EBhHDoEhVQZFoGmJ8rYBeE/view?usp=drive_link"
+          class="list-group-item" id="resume-tab" onclick="hideSidebar()"><i class="fa-regular fa-circle-down"></i>
+          Resume</a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <div class="color-bar">
+    <p style="font-family: 'Writing Signature', cursive;">Md. Johir Raihan</p>
+  </div>
+
+  <!-- Page Content -->
+  <div id="content">
+
+    <!-- Hamburger Menu -->
+    <div id="menu-toggle">
+      <i class="fas fa-bars"></i>
+      <!-- hamberger bar -->
+
+    </div>
+
+    <!-- Close Menu Button (Added) -->
+    <div id="menu-close" style="display: none;">
+      <i class="fas fa-times"></i>
+    </div>
+
+    <div id="toggleDarkMode" aria-label="Toggle Dark Mode">
+      <i class="fas fa-moon"></i>
+    </div>
+
+    <div><br>
+    </div>
+
+    <!-- project start -->
+    <div id="achievements" class="container mt-3" style="display: none;">
+      <h1 style="font-family: Perpetua, serif;">Achievements</h1>
+
+      <!--card another -->
+      <div class="card pub_card" id="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <!-- Image column -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="topic_images/8.gif" class="img-fluid rounded"
+                style="width: 100%; max-height: 400px; object-fit:contain; ">
+            </div>
+
+            <!-- Text and buttons column -->
+            <div class="col-md-8 ">
+              <p class="card-title publication_title"><i class="fa-solid fa-trophy fa-flip"
+                  style="color: #74fc8f;"></i>Storms End: AI enabled solution to visualize and predict
+                Geomagnetic Storms from NASAs' "DISCOVR" spacecraft</p>
+              <p class="card-text" style="margin-bottom: 0px; font-family: 'GFS Didot'">
+              <p class="author_name">Mainul Islam Labib (Team Leader)</p>
+              <p class="author_name"> <strong>Md. Johir Raihan</strong></p>
+              <p class="author_name">Wali Ullah</p>
+              <p class="author_name">Sadia Afrin</p>
+              <p class="author_name">Md. Rashed Jaowad Khan</p>
+              <div></div>
+              <p class="journal_name"> <span class="journal_name_span"><strong>Competition</strong></span>
+                <span class="journal_name_span">NASA Space Apps Challenge</span>
+                <span class="journal_name_span">2023</span>
+              </p>
+
+              </p>
+              <p class="card-text default_card_text">
+                We are proposing "Storms End"; an AI enabled solution to visualize and predict geomagnetic storm. Our
+                solution includes a Neural Network consisting of Spatial and Temporal modules to correctly capture the
+                variability in magnetic readings made from "DSCOVR". The model will be able to take previous readings as
+                input and will output the probability for a geomagnetic storm on a spatio-temporal scale. "Storms End"
+                will also have visualization features where users will be able to see geomagnetic patterns in a 3D
+                environment and how each area on earth is getting affected by geomagnetic storm.
+              </p>
+
+              <div class="card-links">
+                <a href="topic_6.html" class="btn btn-outline-primary card_button">
+                  <i class="fa-brands fa-readme fa-bounce fa-la"></i>
+                  Read More</a>
+                <a href="https://nsac.basis.org.bd/team-details/319" class="btn btn-outline-primary card_button"
+                  role="button"><i class="fa-solid fa-link"></i></i>
+                  Website</a>
+                <a href="https://youtu.be/ESYUsdPHaL4" class="btn btn-outline-primary card_button">
+                  <i class="fa-solid fa-tv"></i>
+                  Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!--card another -->
+      <div class="card pub_card" id="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <!-- Image column -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="topic_images/9.gif" class="img-fluid rounded"
+                style="width: 100%; max-height: 400px; object-fit:contain; ">
+            </div>
+
+            <!-- Text and buttons column -->
+            <div class="col-md-8 ">
+              <p class="card-title publication_title"><i class="fa-solid fa-trophy fa-flip"
+                  style="color: #74fc8f;"></i>Autistic Kids Companion: An Automatic Exercise Assessment and
+                Companion for Autistic Kids and Motor Dysfunction Patients Using ML.</p>
+              <p class="card-text" style="margin-bottom: 0px; font-family: 'GFS Didot'">
+              <p class="author_name"> <strong>Md. Johir Raihan</strong></p>
+              <div></div>
+              <p class="journal_name"> <span class="journal_name_span"><strong>Competition</strong></span>
+                <span class="journal_name_span">Mobile App Game & Job Festival, ICT, Bangladesh</span>
+                <span class="journal_name_span">2023</span>
+              </p>
+
+              </p>
+              <p class="card-text default_card_text">
+                The app titled “Autistic Kids Companion” uses a Mediapipe-based pose landmark algorithm to extract
+                landmarks which are given to a Machine Learning (ML) model to predict the score of the performed
+                exercise and analyze their body movement. The app will also provide which body part they should focus
+                more on to accurately do the exercise. I have also provided an idea to use animated characters in place
+                of their body so that it is more entertaining for them.
+              </p>
+
+              <div class="card-links">
+                <a href="topic_4.html" class="btn btn-outline-primary card_button">
+                  <i class="fa-brands fa-readme fa-bounce fa-la"></i>
+                  Read More</a>
+                <a href="https://youtu.be/hNnHTisxkPQ" class="btn btn-outline-primary card_button">
+                  <i class="fa-solid fa-tv"></i>
+                  Video 1</a>
+                <a href="https://youtu.be/MshVl_PDF6s" class="btn btn-outline-primary card_button">
+                  <i class="fa-solid fa-tv"></i>
+                  Video 2</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+      <!--card another -->
+      <div class="card pub_card" id="card">
+        <div class="card-body">
+          <div class="row align-items-center">
+            <!-- Image column -->
+            <div class="col-md-4 d-flex justify-content-center">
+              <img src="topic_images/10.gif" class="img-fluid rounded"
+                style="width: 100%; max-height: 400px; object-fit:contain; ">
+            </div>
+
+            <!-- Text and buttons column -->
+            <div class="col-md-8 ">
+              <p class="card-title publication_title"></i>Assessing The Rehabilitation Exercise Using GWO Optimized
+                CNN-SE Network and Interpretation of The Model Using SHAP.</p>
+              <p class="card-text" style="margin-bottom: 0px; font-family: 'GFS Didot'">
+              <p class="author_name"> <strong>Md. Johir Raihan</strong></p>
+              <p class="author_name">Md Atiqur Rahman Ahad</p>
+              <p class="author_name">Abdullah-Al Nahid</p>
+              <div></div>
+              <p class="journal_name"> <span class="journal_name_span"><strong>Summer Symposium</strong></span>
+                <span class="journal_name_span">IEEE CS BDC Summer Symposium 2023, IEEE Computer Society Bangladesh
+                  Chapter</span>
+                <span class="journal_name_span">2023</span>
+              </p>
+
+              </p>
+              <p class="card-text default_card_text">
+                The rehabilitation exercise assessment evaluates a person's physical capabilities and guides
+                them on how the exercise should be done to improve their physical ability. Even after automating the
+                process
+                of assessing the rehabilitation exercise score using modern Machine Learning (ML) or Deep learning (DL)
+                techniques, their black-box nature holds them back from use in the real world. Able to interpret these
+                models
+                and finding out how these models are using the human body pose to predict an exercise score may give a
+                better understanding of both the model and the person's data that have been used
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card end -->
+
+
+
+    </div>
+    <!-- project end -->
+
+  </div>
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="scripts.js"></script>
+  <script>
+    function showContent(contentId) {
+      if (String(contentId) === "achievements") {
+        // $(".container").hide();
+        $("#" + contentId).fadeIn();
+        // $("#sidebar a").removeClass("active"); // Remove active class from all tabs
+        $("#" + contentId + "-tab").addClass("active"); // Add active class to the selected tab
+      }
+      hideSidebar(); // Hide the sidebar after clicking a component
+    }
+    $(document).ready(function () {
+      showContent("achievements");
+    });
+
+  </script>
+</body>
+
+</html>
